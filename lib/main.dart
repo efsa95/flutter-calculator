@@ -119,9 +119,14 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
             Row(
               children: <Widget>[
                 buildButton('0', _onPressed),
+                buildButton('%', _onPressed), // Add the modulo button here
                 buildButton('C', _onPressed),
-                buildButton('=', _onPressed),
                 buildButton('+', _onPressed),
+              ],
+            ),
+            Row(
+              children: <Widget>[
+                buildButton('=', _onPressed),
               ],
             ),
           ],
